@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.javiersantos:BottomDialogs:1.2.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/55b2b3218452d4342e4ba657f50e4b77/jetified-BottomDialogs-1.2.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/55b2b3218452d4342e4ba657f50e4b77/jetified-BottomDialogs-1.2.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

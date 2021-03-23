@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.prscx:bottomsheetbuilder:fixes-SNAPSHOT@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cd5b0116e248ed085928b795a3a4d82e/jetified-bottomsheetbuilder-fixes-SNAPSHOT/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cd5b0116e248ed085928b795a3a4d82e/jetified-bottomsheetbuilder-fixes-SNAPSHOT/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.prscx/bottomsheetbuilder/fixes-SNAPSHOT/5a73e16faa7ed90e5a375ecd50f31d4053c7aa56/bottomsheetbuilder-fixes-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.prscx/bottomsheetbuilder/fixes-SNAPSHOT/f305f9322e5f2bd19d2599da9ef1f15271cef76/bottomsheetbuilder-fixes-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

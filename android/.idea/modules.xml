@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Whatsapp.iml" filepath="$PROJECT_DIR$/Whatsapp.iml" group="Whatsapp" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Whatsapp/app" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-bottom-action-sheet/android/react-native-bottom-action-sheet.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-bottom-action-sheet/android/react-native-bottom-action-sheet.iml" group="Whatsapp/react-native-bottom-action-sheet" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-camera/android/react-native-camera.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-camera/android/react-native-camera.iml" group="Whatsapp/react-native-camera" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/@react-native-community/async-storage/android/react-native-community_async-storage.iml" filepath="$PROJECT_DIR$/../node_modules/@react-native-community/async-storage/android/react-native-community_async-storage.iml" group="Whatsapp/react-native-community_async-storage" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/@react-native-community/masked-view/android/react-native-community_masked-view.iml" filepath="$PROJECT_DIR$/../node_modules/@react-native-community/masked-view/android/react-native-community_masked-view.iml" group="Whatsapp/react-native-community_masked-view" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/@react-native-community/viewpager/android/react-native-community_viewpager.iml" filepath="$PROJECT_DIR$/../node_modules/@react-native-community/viewpager/android/react-native-community_viewpager.iml" group="Whatsapp/react-native-community_viewpager" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-contacts/android/react-native-contacts.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-contacts/android/react-native-contacts.iml" group="Whatsapp/react-native-contacts" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-fast-image/android/react-native-fast-image.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-fast-image/android/react-native-fast-image.iml" group="Whatsapp/react-native-fast-image" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-gesture-handler/android/react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-gesture-handler/android/react-native-gesture-handler.iml" group="Whatsapp/react-native-gesture-handler" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-image-helper/android/react-native-image-helper.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-image-helper/android/react-native-image-helper.iml" group="Whatsapp/react-native-image-helper" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-localize/android/react-native-localize.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-localize/android/react-native-localize.iml" group="Whatsapp/react-native-localize" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-reanimated/android/react-native-reanimated.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-reanimated/android/react-native-reanimated.iml" group="Whatsapp/react-native-reanimated" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-safe-area-context/android/react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-safe-area-context/android/react-native-safe-area-context.iml" group="Whatsapp/react-native-safe-area-context" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-screens/android/react-native-screens.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-screens/android/react-native-screens.iml" group="Whatsapp/react-native-screens" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-vector-icons/android/react-native-vector-icons.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-vector-icons/android/react-native-vector-icons.iml" group="Whatsapp/react-native-vector-icons" />
+    </modules>
+  </component>
+</project>
