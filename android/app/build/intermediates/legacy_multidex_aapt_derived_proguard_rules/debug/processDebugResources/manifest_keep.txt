@@ -1,0 +1,4 @@
+# Referenced at /Volumes/Work/Projects/React Native/Product/Whatsapp/android/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:26
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at /Volumes/Work/Projects/React Native/Product/Whatsapp/android/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:26
+-keep class com.chat.whatsapp.MainApplication { <init>(); }

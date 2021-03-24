@@ -1,0 +1,20 @@
+w{
+    "logs": [
+        {
+            "outputFile": "/Volumes/Work/Projects/React Native/Product/Whatsapp/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml",
+            "map": [
+                {
+                    "source": "/Users/macbookpro/.gradle/caches/transforms-2/files-2.1/55b2b3218452d4342e4ba657f50e4b77/jetified-BottomDialogs-1.2.1/res/values-v14/values-v14.xml",
+                    "from": {
+                        "startLines": "2,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,168",
+                        "endLines": "4,7",
+                        "endColumns": "12,12",
+                        "endOffsets": "163,286"
+                    }
+                }
+            ]
+        }
+    ]
+}

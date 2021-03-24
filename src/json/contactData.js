@@ -1,0 +1,98 @@
+export default [
+    {
+        userId: 1,
+        name: 'Carol Stephens',
+        profilePic: 'https://images.unsplash.com/photo-1529903384028-929ae5dccdf1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+        status: 'At work',
+    },
+    {
+        userId: 2,
+        name: 'Alice Barnett',
+        profilePic: 'https://images.unsplash.com/photo-1504703395950-b89145a5425b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+        status: `I did't change, I just grew up...`,
+    },
+    {
+        userId: 3,
+        name: 'Alice Barnett',
+        profilePic: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+        status: 'At work',
+    },
+    {
+        userId: 4,
+        name: 'Cheryl Peterson',
+        profilePic: 'https://images.unsplash.com/photo-1485875437342-9b39470b3d95?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+        status: `Hey there! I am using Whatsapp`,
+    },
+    {
+        userId: 5,
+        name: 'Stephen Green',
+        profilePic: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+        status: 'Available',
+    },
+    {
+        userId: 6,
+        name: 'Stephanie Munoz',
+        profilePic: 'https://images.unsplash.com/photo-1486074051793-e41332bf18fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+        status: `Can't talk, Whatsapp only`,
+    },
+    {
+        userId: 7,
+        name: 'Munoz Green',
+        profilePic: 'https://images.unsplash.com/photo-1559781732-eed3e087c660?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+        status: `Hey there! I am using Whatsapp`,
+    },
+    {
+        userId: 8,
+        name: 'Stephanie Munoz',
+        profilePic: 'https://images.unsplash.com/photo-1579702493520-6db186849e38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+        status: 'At work',
+    },
+    {
+        userId: 9,
+        name: 'Carol Stephens',
+        profilePic: 'https://images.unsplash.com/photo-1529903384028-929ae5dccdf1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+        status: 'At work',
+    },
+    {
+        userId: 10,
+        name: 'Alice Barnett',
+        profilePic: 'https://images.unsplash.com/photo-1504703395950-b89145a5425b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+        status: `I did't change, I just grew up...`,
+    },
+    {
+        userId: 11,
+        name: 'Alice Barnett',
+        profilePic: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+        status: 'At work',
+    },
+    {
+        userId: 12,
+        name: 'Cheryl Peterson',
+        profilePic: 'https://images.unsplash.com/photo-1485875437342-9b39470b3d95?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+        status: `Hey there! I am using Whatsapp`,
+    },
+    {
+        userId: 13,
+        name: 'Stephen Green',
+        profilePic: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+        status: 'Available',
+    },
+    {
+        userId: 14,
+        name: 'Stephanie Munoz',
+        profilePic: 'https://images.unsplash.com/photo-1486074051793-e41332bf18fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+        status: `Can't talk, Whatsapp only`,
+    },
+    {
+        userId: 15,
+        name: 'Munoz Green',
+        profilePic: 'https://images.unsplash.com/photo-1486074051793-e41332bf18fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+        status: `Hey there! I am using Whatsapp`,
+    },
+    {
+        userId: 16,
+        name: 'Stephanie Munoz',
+        profilePic: 'https://images.unsplash.com/photo-1486074051793-e41332bf18fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+        status: 'At work',
+    },
+];

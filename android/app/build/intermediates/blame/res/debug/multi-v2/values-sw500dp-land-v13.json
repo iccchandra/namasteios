@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Volumes/Work/Projects/React Native/Product/Whatsapp/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw500dp-land-v13/values-sw500dp-land-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/macbookpro/.gradle/caches/transforms-2/files-2.1/cd5b0116e248ed085928b795a3a4d82e/jetified-bottomsheetbuilder-fixes-SNAPSHOT/res/values-sw500dp-land-v13/values-sw500dp-land-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,101,151",
+                        "endColumns": "45,49,56",
+                        "endOffsets": "96,146,203"
+                    }
+                }
+            ]
+        }
+    ]
+}
