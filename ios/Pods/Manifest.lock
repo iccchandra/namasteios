@@ -333,7 +333,7 @@ PODS:
     - React
   - RNLocalize (1.4.3):
     - React-Core
-  - RNReanimated (1.13.2):
+  - RNReanimated (1.13.3):
     - React-Core
   - RNScreens (2.18.1):
     - React-Core
@@ -346,6 +346,8 @@ PODS:
     - libwebp (~> 1.0)
     - SDWebImage/Core (~> 5.7)
   - SGActionView (0.0.1)
+  - toolbar-android (0.1.0-rc.2):
+    - React
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -411,6 +413,7 @@ DEPENDENCIES:
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
+  - "toolbar-android (from `../node_modules/@react-native-community/toolbar-android`)"
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -509,6 +512,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-screens"
   RNVectorIcons:
     :path: "../node_modules/react-native-vector-icons"
+  toolbar-android:
+    :path: "../node_modules/@react-native-community/toolbar-android"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -560,12 +565,13 @@ SPEC CHECKSUMS:
   RNGestureHandler: a479ebd5ed4221a810967000735517df0d2db211
   RNImageHelper: c8cfcbb0e45b6cbe368dd834b3b1fb583e7acbf9
   RNLocalize: 7c7aeda16c01db7a0918981c14875c0a53be9b79
-  RNReanimated: e03f7425cb7a38dcf1b644d680d1bfc91c3337ad
+  RNReanimated: 514a11da3a2bcc6c3dfd9de32b38e2b9bf101926
   RNScreens: f7ad633b2e0190b77b6a7aab7f914fad6f198d8d
   RNVectorIcons: 368d6d8b8301224e5ffb6254191f4f8876c2be0d
   SDWebImage: 84000f962cbfa70c07f19d2234cbfcf5d779b5dc
   SDWebImageWebPCoder: d0dac55073088d24b2ac1b191a71a8f8d0adac21
   SGActionView: 7d7f2af343936932cab8302749e5345a1732c0b7
+  toolbar-android: 85f3ef4d691469f2d304e7dee4bca013aa1ba1ff
   Yoga: 3ebccbdd559724312790e7742142d062476b698e
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 

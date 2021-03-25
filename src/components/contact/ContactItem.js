@@ -19,25 +19,25 @@ class ContactItem extends Component {
                     styles.container,
                     {backgroundColor: theme.container.backgroundColor}
                 ]}>
-                    <View style={[styles.profileView]}>
+                    {/* <View style={[styles.profileView]}>
                         <FastImage style={styles.profileImage} source={{uri: item.profilePic}}/>
-                    </View>
+                    </View> */}
                     <View style={[styles.infoView, {borderColor: theme.subSecondaryColor}]}>
                         <View style={styles.nameView}>
-                            <Text style={[styles.nameText, {color: theme.primaryColor}]}>{item.name}</Text>
-                            {
+                            <Text style={[styles.nameText, {color: theme.primaryColor}]}>{item.givenName}</Text>
+                            {/* {
                                 type !== 'group_call' && <Text style={[styles.timeText, {color: theme.secondaryColor}]}>
                                     {item.status}
                                 </Text>
-                            }
+                            } */}
                         </View>
-                        {
+                        {/* {
                             type === 'call' && <TouchableWithoutFeedback onPress={() => {}}>
                                 <View style={{width: 40, paddingLeft: 10}}>
                                     <Icon type={'Feather'} name="phone-call" style={{color: theme.primaryColor, fontSize: 25}} />
                                 </View>
                             </TouchableWithoutFeedback>
-                        }
+                        } */}
                     </View>
                 </View>
             </TouchableWithoutFeedback>

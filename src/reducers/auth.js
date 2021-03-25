@@ -4,6 +4,7 @@ import {THEMES} from '../themes/themes';
 const initialAuthState = {loading: true, user: null, theme: THEMES[1], contactData: []};
 
 function auth(state = initialAuthState, action) {
+  console.log('action', action);
   switch (action.type) {
     case LOGIN:
       return {...state, user: action.payload, loading: false};

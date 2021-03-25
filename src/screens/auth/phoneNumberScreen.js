@@ -13,6 +13,7 @@ import CountryPicker from 'react-native-country-picker-modal';
 import * as RNLocalize from 'react-native-localize';
 import {W_WIDTH} from '../../utils/regex';
 import HeaderComponent from '../../components/general/Header';
+import axios from 'axios';
 
 class phoneNumberScreen extends Component {
   constructor(props) {
@@ -24,9 +25,25 @@ class phoneNumberScreen extends Component {
     };
   }
 
+  continueHanlder = () => {
+    const {navigation} = this.props;
+    axios.post('https://chatapi.namaste.in/api/login', {
+        "appVersion": "8.2.78",
+        "devicetoken": "frSRyR_VTmOA70fapR6WWv:APA91bELkHgRjbc9RR0fpai-5-rnz9jWYR8bpWcEK71HydqEm4fYlULlKFZzAW6P3-nvMZbgKPrcS_52O7S460-hac42YXhdT645edio2uwv3tAbUj8RdNTkbtgx_k5HDuIx-vMydg_B",
+        "loginParam": "+919000006515",
+        "LengthParam": "4"
+    })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+    // navigation.navigate('VerificationCode');
+  }
+
   render() {
     const {theme, navigation} = this.props;
-
     return (
       <View
         style={[
@@ -47,7 +64,7 @@ class phoneNumberScreen extends Component {
             resizeMode={'contain'}
           />
           <Text style={[styles.titleText, {color: theme.primaryColor}]}>
-            Welcome to whatsapp
+            Welcome to Namaste
           </Text>
           <Text style={[styles.descriptionText, {color: theme.secondaryColor}]}>
             Provide your phone number, so we can be able to send you
@@ -90,7 +107,8 @@ class phoneNumberScreen extends Component {
             <Text style={{fontWeight: '800'}}>Terms.</Text>
           </Text>
           <TouchableWithoutFeedback
-            onPress={() => navigation.navigate('VerificationCode')}>
+            // onPress={() => navigation.navigate('VerificationCode')}>
+            onPress={this.continueHanlder}>
             <View style={styles.continueView}>
               <Text style={styles.continueText}>Continue</Text>
             </View>

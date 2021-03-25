@@ -1,19 +1,34 @@
 import React, {Component} from 'react';
-import {View, StyleSheet, Text, TouchableWithoutFeedback, FlatList} from 'react-native';
+import {View, StyleSheet, Text, TouchableWithoutFeedback, FlatList, Platform} from 'react-native';
 import {connect} from 'react-redux';
 import {Header, Icon, Right, Button, Item, Input} from 'native-base';
 import contactData from '../../../json/contactData';
 import ContactItem from '../../../components/contact/ContactItem';
 import Feather from 'react-native-vector-icons/Feather';
 import {ONLINE, White} from '../../../themes/constantColors';
+import Contacts from "react-native-contacts";
 
 class selectContactScreen extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: JSON.parse(JSON.stringify(contactData)),
+            data: [],
             searchText: '',
             isSearch: false
+        }
+    }
+
+    componentDidMount(){
+        // console.log(JSON.parse(JSON.stringify(contactData)));
+        if(Platform.OS === 'ios'){
+          Contacts.getAll((err, contacts) => {
+            if (err) {
+              throw err;
+            }
+            // contacts returned
+            console.log(contacts);
+            this.setState({data: contacts})
+          })
         }
     }
 
@@ -45,7 +60,7 @@ class selectContactScreen extends Component {
     renderNavHeader = () => {
         const {theme, navigation} = this.props;
         const {data, isSearch} = this.state;
-
+        console.log('data', data);
         return (
             <Header transparent>
                 <View style={{flex: 1, flexDirection: 'row', justifyContent: 'space-between',}}>
@@ -127,7 +142,7 @@ class selectContactScreen extends Component {
                             navigation={navigation}
                         />
                     }
-                    keyExtractor={item => item.userId.toString()}
+                    keyExtractor={item => item.givenName.toString()}
                     extraData={data}
                 />
             </View>
