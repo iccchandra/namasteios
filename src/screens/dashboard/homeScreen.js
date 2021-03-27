@@ -11,7 +11,7 @@ import {getContacts} from '../../utils/contact';
 import Feather from 'react-native-vector-icons/Feather';
 import {Black, GRAY, LIGHTGRAY, ONLINE, White} from '../../themes/constantColors';
 import {getStore} from '../../../App';
-import {CONTACT} from '../../actions/types';
+import {CONTACT} from '../../actions/actionTypes';
 import {Popover} from 'react-native-modal-popover';
 import { Button } from 'native-base';
 import {OS, W_WIDTH} from '../../utils/regex';
@@ -146,6 +146,7 @@ class homeScreen extends Component {
 
     render() {
         const {theme, navigation} = this.props;
+        console.log('theme', theme);
         const {currentIndex, showPopover, popoverAnchor} = this.state;
 
         let name = 'message-square';

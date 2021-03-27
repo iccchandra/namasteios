@@ -13,7 +13,8 @@ import CountryPicker from 'react-native-country-picker-modal';
 import * as RNLocalize from 'react-native-localize';
 import {W_WIDTH} from '../../utils/regex';
 import HeaderComponent from '../../components/general/Header';
-import axios from 'axios';
+import * as actionTypes from '../../actions/index';
+import SplashScreen from '../SplashScreen';
 
 class phoneNumberScreen extends Component {
   constructor(props) {
@@ -26,24 +27,17 @@ class phoneNumberScreen extends Component {
   }
 
   continueHanlder = () => {
-    const {navigation} = this.props;
-    axios.post('https://chatapi.namaste.in/api/login', {
-        "appVersion": "8.2.78",
-        "devicetoken": "frSRyR_VTmOA70fapR6WWv:APA91bELkHgRjbc9RR0fpai-5-rnz9jWYR8bpWcEK71HydqEm4fYlULlKFZzAW6P3-nvMZbgKPrcS_52O7S460-hac42YXhdT645edio2uwv3tAbUj8RdNTkbtgx_k5HDuIx-vMydg_B",
-        "loginParam": "+919000006515",
-        "LengthParam": "4"
-    })
-    .then(function (response) {
-      console.log(response);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
+    // const {navigation} = this.props;
+    this.props.login();
     // navigation.navigate('VerificationCode');
   }
+  
 
   render() {
-    const {theme, navigation} = this.props;
+    const {theme, navigation, loading} = this.props;
+    if (loading) {
+      return <SplashScreen />;
+    }
     return (
       <View
         style={[
@@ -121,9 +115,16 @@ class phoneNumberScreen extends Component {
 
 const mapStateToProps = (state) => ({
   theme: state.auth.theme,
+  loading: state.auth.loading,
 });
 
-export default connect(mapStateToProps)(phoneNumberScreen);
+const mapDispatchToProps = dispatch => {
+  return {
+    login: () => dispatch(actionTypes.auth())
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(phoneNumberScreen);
 
 const styles = StyleSheet.create({
   container: {

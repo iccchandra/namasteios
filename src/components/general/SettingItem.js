@@ -4,7 +4,7 @@ import {Icon} from "native-base";
 import {THEMES} from '../../themes/themes';
 import {regex} from '../../utils/regex';
 import {getStore} from '../../../App';
-import {THEME} from '../../actions/types';
+import * as actionTypes from '../../actions/actionTypes';
 
 class SettingItem extends Component {
 
@@ -59,7 +59,7 @@ class SettingItem extends Component {
             newTheme = THEMES[0];
             regex.changeStatusStyle('light-content');
         }
-        getStore.dispatch({type: THEME, payload: newTheme});
+        getStore.dispatch({type: actionTypes.THEME, payload: newTheme});
     };
 
     onChatPress = () => {

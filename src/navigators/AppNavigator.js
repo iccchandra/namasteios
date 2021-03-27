@@ -55,7 +55,7 @@ class AppNavigator extends React.PureComponent {
     super(props);
   }
 
-  componentDidMount(): void {
+  componentDidMount() {
     appNav = this;
   }
 
@@ -100,7 +100,7 @@ class AppNavigator extends React.PureComponent {
 }
 
 const mapStateToProps = (state) => ({
-  loading: state.auth.loading,
+  // loading: state.auth.loading,
   user: state.auth.user,
   theme: state.auth.theme,
 });

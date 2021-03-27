@@ -15,7 +15,7 @@ import {
   LOGOUT,
   SHOW_LOADER,
   STORAGE_KEY,
-} from '../actions/types';
+} from '../actions/actionTypes';
 import {getStore} from '../../App';
 // import {defaultRestClient} from "./restClient";
 import * as messages from './messages';

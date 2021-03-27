@@ -21,9 +21,9 @@ class setupProfileScreen extends Component {
   }
 
   onFinishPress = () => {
-    regex.setDashboard({
-      token: '122323432'
-    })
+    // regex.setDashboard({
+    //   token: '122323432'
+    // })
   };
 
   render() {

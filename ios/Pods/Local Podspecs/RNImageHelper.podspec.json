@@ -5,7 +5,9 @@
   "description": "ReactNative: Native Image Helper",
   "homepage": "https://github.com/prscX/react-native-image-helper.git",
   "license": "Apache License 2.0",
-  "authors": "Pranav Raj Singh Chauhan",
+  "authors": {
+    "name": "Pranav Raj Singh Chauhan"
+  },
   "source": {
     "git": "https://github.com/prscX/react-native-image-helper.git"
   },

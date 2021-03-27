@@ -5,7 +5,9 @@
   "description": "React Native: Native Bottom Action Sheet",
   "homepage": "https://github.com/prscX/react-native-bottom-action-sheet.git",
   "license": "Apache License 2.0",
-  "authors": "Pranav Raj Singh Chauhan",
+  "authors": {
+    "name": "Pranav Raj Singh Chauhan"
+  },
   "source": {
     "git": "https://github.com/prscX/react-native-bottom-action-sheet.git",
     "tag": "2.0.1"

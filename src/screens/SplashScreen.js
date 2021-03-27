@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Text, View} from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
-import {LOGIN, LOGOUT} from '../actions/types';
+import * as actionTypes from '../actions/actionTypes';
 import {getStore} from '../../App';
 import {regex} from '../utils/regex';
 import {White} from '../themes/constantColors';
@@ -22,13 +22,14 @@ class SplashScreen extends Component {
 
     try {
       userToken = await AsyncStorage.getItem('userToken');
+      console.log('userToken', userToken);
       if (userToken !== null) {
-        getStore.dispatch({type: LOGIN, payload: userToken});
+        getStore.dispatch({type: actionTypes.LOGIN, payload: userToken});
       } else {
-        getStore.dispatch({type: LOGOUT});
+        getStore.dispatch({type: actionTypes.LOGOUT});
       }
     } catch (e) {
-      getStore.dispatch({type: LOGOUT});
+      getStore.dispatch({type: actionTypes.LOGOUT});
     }
   };
 

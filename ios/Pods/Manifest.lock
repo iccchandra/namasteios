@@ -1,6 +1,6 @@
 PODS:
   - boost-for-react-native (1.63.0)
-  - CocoaAsyncSocket (7.6.4)
+  - CocoaAsyncSocket (7.6.5)
   - CocoaLibEvent (1.0.0)
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.62.2)
@@ -15,16 +15,16 @@ PODS:
     - Flipper-Folly (~> 2.1)
     - Flipper-RSocket (~> 1.0)
   - Flipper-DoubleConversion (1.1.7)
-  - Flipper-Folly (2.1.1):
+  - Flipper-Folly (2.4.0):
     - boost-for-react-native
     - CocoaLibEvent (~> 1.0)
     - Flipper-DoubleConversion
     - Flipper-Glog
-    - OpenSSL-Universal (= 1.0.2.19)
+    - OpenSSL-Universal (= 1.1.180)
   - Flipper-Glog (0.3.6)
   - Flipper-PeerTalk (0.0.4)
-  - Flipper-RSocket (1.0.0):
-    - Flipper-Folly (~> 2.0)
+  - Flipper-RSocket (1.2.0):
+    - Flipper-Folly (~> 2.4)
   - FlipperKit (0.33.1):
     - FlipperKit/Core (= 0.33.1)
   - FlipperKit/Core (0.33.1):
@@ -67,18 +67,16 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
-  - libwebp (1.1.0):
-    - libwebp/demux (= 1.1.0)
-    - libwebp/mux (= 1.1.0)
-    - libwebp/webp (= 1.1.0)
-  - libwebp/demux (1.1.0):
+  - libwebp (1.2.0):
+    - libwebp/demux (= 1.2.0)
+    - libwebp/mux (= 1.2.0)
+    - libwebp/webp (= 1.2.0)
+  - libwebp/demux (1.2.0):
     - libwebp/webp
-  - libwebp/mux (1.1.0):
+  - libwebp/mux (1.2.0):
     - libwebp/demux
-  - libwebp/webp (1.1.0)
-  - OpenSSL-Universal (1.0.2.19):
-    - OpenSSL-Universal/Static (= 1.0.2.19)
-  - OpenSSL-Universal/Static (1.0.2.19)
+  - libwebp/webp (1.2.0)
+  - OpenSSL-Universal (1.1.180)
   - RCTRequired (0.62.2)
   - RCTTypeSafety (0.62.2):
     - FBLazyVector (= 0.62.2)
@@ -242,20 +240,20 @@ PODS:
     - React-cxxreact (= 0.62.2)
     - React-jsi (= 0.62.2)
   - React-jsinspector (0.62.2)
-  - react-native-camera (3.43.0):
-    - React-Core
-    - react-native-camera/RCT (= 3.43.0)
-    - react-native-camera/RN (= 3.43.0)
-  - react-native-camera/RCT (3.43.0):
-    - React-Core
-  - react-native-camera/RN (3.43.0):
-    - React-Core
-  - react-native-contacts (5.2.8):
-    - React-Core
+  - react-native-camera (3.26.0):
+    - React
+    - react-native-camera/RCT (= 3.26.0)
+    - react-native-camera/RN (= 3.26.0)
+  - react-native-camera/RCT (3.26.0):
+    - React
+  - react-native-camera/RN (3.26.0):
+    - React
+  - react-native-contacts (5.2.0):
+    - React
   - react-native-safe-area-context (0.7.3):
     - React
-  - react-native-viewpager (4.2.4):
-    - React-Core
+  - react-native-viewpager (4.0.0):
+    - React
   - React-RCTActionSheet (0.62.2):
     - React-Core/RCTActionSheetHeaders (= 0.62.2)
   - React-RCTAnimation (0.62.2):
@@ -319,32 +317,32 @@ PODS:
     - React
     - RNImageHelper
     - SGActionView
-  - RNCAsyncStorage (1.12.1):
-    - React-Core
+  - RNCAsyncStorage (1.9.0):
+    - React
   - RNCMaskedView (0.1.10):
     - React
-  - RNFastImage (8.3.4):
-    - React-Core
-    - SDWebImage (~> 5.8)
-    - SDWebImageWebPCoder (~> 0.6.1)
-  - RNGestureHandler (1.10.3):
-    - React-Core
+  - RNFastImage (8.1.5):
+    - React
+    - SDWebImage (~> 5.0)
+    - SDWebImageWebPCoder (~> 0.4.1)
+  - RNGestureHandler (1.6.1):
+    - React
   - RNImageHelper (0.0.2):
     - React
-  - RNLocalize (1.4.3):
-    - React-Core
-  - RNReanimated (1.13.3):
-    - React-Core
-  - RNScreens (2.18.1):
-    - React-Core
-  - RNVectorIcons (6.7.0):
+  - RNLocalize (1.4.0):
     - React
-  - SDWebImage (5.8.0):
-    - SDWebImage/Core (= 5.8.0)
-  - SDWebImage/Core (5.8.0)
-  - SDWebImageWebPCoder (0.6.1):
+  - RNReanimated (1.8.0):
+    - React
+  - RNScreens (2.7.0):
+    - React
+  - RNVectorIcons (6.6.0):
+    - React
+  - SDWebImage (5.10.4):
+    - SDWebImage/Core (= 5.10.4)
+  - SDWebImage/Core (5.10.4)
+  - SDWebImageWebPCoder (0.4.1):
     - libwebp (~> 1.0)
-    - SDWebImage/Core (~> 5.7)
+    - SDWebImage/Core (~> 5.5)
   - SGActionView (0.0.1)
   - toolbar-android (0.1.0-rc.2):
     - React
@@ -417,7 +415,7 @@ DEPENDENCIES:
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - boost-for-react-native
     - CocoaAsyncSocket
     - CocoaLibEvent
@@ -519,22 +517,22 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
-  CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   CocoaLibEvent: 2fab71b8bd46dd33ddb959f7928ec5909f838e3f
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
   FBLazyVector: 4aab18c93cd9546e4bfed752b4084585eca8b245
   FBReactNativeSpec: 5465d51ccfeecb7faa12f9ae0024f2044ce4044e
   Flipper: 6c1f484f9a88d30ab3e272800d53688439e50f69
   Flipper-DoubleConversion: 38631e41ef4f9b12861c67d17cb5518d06badc41
-  Flipper-Folly: 2de3d03e0acc7064d5e4ed9f730e2f217486f162
+  Flipper-Folly: ac90e2debaad40c347b90058feb263a80a3ba657
   Flipper-Glog: 1dfd6abf1e922806c52ceb8701a3599a79a200a6
   Flipper-PeerTalk: 116d8f857dc6ef55c7a5a75ea3ceaafe878aadc9
-  Flipper-RSocket: 1260a31c05c238eabfa9bb8a64e3983049048371
+  Flipper-RSocket: a4adba0851ba12c1b011a320b2d99c93ce4e77f9
   FlipperKit: 6dc9b8f4ef60d9e5ded7f0264db299c91f18832e
   Folly: 30e7936e1c45c08d884aa59369ed951a8e68cf51
   glog: 1f3da668190260b06b429bb211bfbee5cd790c28
-  libwebp: 946cb3063cea9236285f7e9a8505d806d30e07f3
-  OpenSSL-Universal: 8b48cc0d10c1b2923617dfe5c178aa9ed2689355
+  libwebp: e90b9c01d99205d03b6bb8f2c8c415e5a4ef66f0
+  OpenSSL-Universal: 1aa4f6a6ee7256b83db99ec1ccdaa80d10f9af9b
   RCTRequired: cec6a34b3ac8a9915c37e7e4ad3aa74726ce4035
   RCTTypeSafety: 93006131180074cffa227a1075802c89a49dd4ce
   React: 29a8b1a02bd764fb7644ef04019270849b9a7ac3
@@ -544,10 +542,10 @@ SPEC CHECKSUMS:
   React-jsi: b6dc94a6a12ff98e8877287a0b7620d365201161
   React-jsiexecutor: 1540d1c01bb493ae3124ed83351b1b6a155db7da
   React-jsinspector: 512e560d0e985d0e8c479a54a4e5c147a9c83493
-  react-native-camera: f432fcf1b32b528bbf7c3543d3e3b1deb0c5b72a
-  react-native-contacts: 7b5e16196278636030c3fbbb9505543984b01697
-  react-native-safe-area-context: e200d4433aba6b7e60b52da5f37af11f7a0b0392
-  react-native-viewpager: 32259f9d01874abdf42b25cf81a1d78d1aa55582
+  react-native-camera: 9e3d60336e221d62e5b72adf551ca31ff74a94b5
+  react-native-contacts: 439dd9c7ea7e0d86190f8370898b82cfb7cf4ef4
+  react-native-safe-area-context: 8260e5157617df4b72865f44006797f895b2ada7
+  react-native-viewpager: 82826c981b1ad277757388317686fad30210ed77
   React-RCTActionSheet: f41ea8a811aac770e0cc6e0ad6b270c644ea8b7c
   React-RCTAnimation: 49ab98b1c1ff4445148b72a3d61554138565bad0
   React-RCTBlob: a332773f0ebc413a0ce85942a55b064471587a71
@@ -558,23 +556,23 @@ SPEC CHECKSUMS:
   React-RCTText: fae545b10cfdb3d247c36c56f61a94cfd6dba41d
   React-RCTVibration: 4356114dbcba4ce66991096e51a66e61eda51256
   ReactCommon: ed4e11d27609d571e7eee8b65548efc191116eb3
-  RNBottomActionSheet: 079312f639c7ebd3d592e5f40ea1b83b9e2a7801
-  RNCAsyncStorage: b03032fdbdb725bea0bd9e5ec5a7272865ae7398
-  RNCMaskedView: 5a8ec07677aa885546a0d98da336457e2bea557f
-  RNFastImage: d4870d58f5936111c56218dbd7fcfc18e65b58ff
-  RNGestureHandler: a479ebd5ed4221a810967000735517df0d2db211
-  RNImageHelper: c8cfcbb0e45b6cbe368dd834b3b1fb583e7acbf9
-  RNLocalize: 7c7aeda16c01db7a0918981c14875c0a53be9b79
-  RNReanimated: 514a11da3a2bcc6c3dfd9de32b38e2b9bf101926
-  RNScreens: f7ad633b2e0190b77b6a7aab7f914fad6f198d8d
-  RNVectorIcons: 368d6d8b8301224e5ffb6254191f4f8876c2be0d
-  SDWebImage: 84000f962cbfa70c07f19d2234cbfcf5d779b5dc
-  SDWebImageWebPCoder: d0dac55073088d24b2ac1b191a71a8f8d0adac21
+  RNBottomActionSheet: fd19d701cd2ed84e86739b58af406f5b5b32d6c8
+  RNCAsyncStorage: b16697280b08bab4b5f2f67f752d93d13a52e9ed
+  RNCMaskedView: f5c7d14d6847b7b44853f7acb6284c1da30a3459
+  RNFastImage: 35ae972d6727c84ee3f5c6897e07f84d0a3445e9
+  RNGestureHandler: 8f09cd560f8d533eb36da5a6c5a843af9f056b38
+  RNImageHelper: 6c6c024af8df428adba367fa5a0c6205526accf8
+  RNLocalize: fc27ee5878ce5a3af73873fb2d8e866e0d1e6d84
+  RNReanimated: 955cf4068714003d2f1a6e2bae3fb1118f359aff
+  RNScreens: cf198f915f8a2bf163de94ca9f5bfc8d326c3706
+  RNVectorIcons: 0bb4def82230be1333ddaeee9fcba45f0b288ed4
+  SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
+  SDWebImageWebPCoder: 36f8f47bd9879a8aea6044765c1351120fd8e3a8
   SGActionView: 7d7f2af343936932cab8302749e5345a1732c0b7
-  toolbar-android: 85f3ef4d691469f2d304e7dee4bca013aa1ba1ff
+  toolbar-android: 404f4450b203597e7b417f714ff417bed562a1be
   Yoga: 3ebccbdd559724312790e7742142d062476b698e
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: c8f27f6e31e0c330cc0bac51cbd19e1185491372
+PODFILE CHECKSUM: 0749197d66bfbe4dd0fc5a59bcc360a8fb972536
 
 COCOAPODS: 1.10.1
