@@ -1,6 +1,14 @@
 import { makeNetworkRequest } from '../store/utility';
 import * as actionTypes from './actionTypes';
 
+
+export const updateNumber = ( phoneNumber ) => {
+    return {
+        type: actionTypes.ENTER_NUMBER,
+        phoneNumber: phoneNumber
+    };
+};
+
 export const authSuccess = (data) => {
     return {
         type: actionTypes.AUTH_SUCCESS,
@@ -8,19 +16,46 @@ export const authSuccess = (data) => {
     }
 }
 
-export const auth = () => {
+export const verifyOTPSuccess = (data) => {
+    return {
+        type: actionTypes.VERIFY_OTP,
+        payload: data
+    }
+}
+
+
+export const auth = (phoneNumber) => {
     const data = {
-        "appVersion": "8.2.78",
-        "devicetoken": "frSRyR_VTmOA70fapR6WWv:APA91bELkHgRjbc9RR0fpai-5-rnz9jWYR8bpWcEK71HydqEm4fYlULlKFZzAW6P3-nvMZbgKPrcS_52O7S460-hac42YXhdT645edio2uwv3tAbUj8RdNTkbtgx_k5HDuIx-vMydg_B",
-        "loginParam": "+919000006515",
-        "LengthParam": "4"
+        "loginParam": `+91${phoneNumber}`,
+        "otpLengthParam": "4"
     }
     return makeNetworkRequest({
             url: "/api/login",
             onSuccess: authSuccess,
             onFailure: (err) => console.log("Error", err),
-            label: actionTypes.LOGIN_CALL_MADE,
             method: 'POST',
             data
         });
 };
+
+export const verifyOTP = (code) => {
+    return (dispatch, getState) => {
+        const { data: { OTPDetails, UserDetails } } = getState().auth?.data;
+        const data = {
+            "deviceType": UserDetails.deviceType,
+            "mobile": UserDetails.mobile,
+            "otpIdParam": OTPDetails.userId,
+            "otpParam": code,
+            "deviceId": UserDetails.deviceId,
+            "userIdParam": OTPDetails.userId,
+            "actionName": "login"
+        }
+        dispatch(makeNetworkRequest({
+            url: "/api/verify_otp",
+            onSuccess: verifyOTPSuccess,
+            label: actionTypes.VERIFY_OTP_REQUEST,
+            method: 'POST',
+            data
+        }));
+    }
+}

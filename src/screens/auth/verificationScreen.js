@@ -6,6 +6,7 @@ import {Black, GRAY, ONLINE} from '../../themes/constantColors';
 import {CodeField, Cursor} from 'react-native-confirmation-code-field';
 import {W_WIDTH} from '../../utils/regex';
 import HeaderComponent from '../../components/general/Header';
+import * as actionTypes from '../../actions/index';
 
 const CELL_COUNT = 4;
 
@@ -18,18 +19,11 @@ class verificationScreen extends Component {
   }
 
   onChangeText = code => {
-    // if (code !== '1234') {
-    //   return Alert.alert(
-    //       'Confirmation Code',
-    //       'Code not match! Try 1234',
-    //       [{ text: 'OK' }],
-    //       { cancelable: false },
-    //   );
-    // }
-
     this.setState({value: code}, () => {
-      if (code.length >= 4)
-        this.props.navigation.navigate('SetupProfile');
+      if (code.length >= 4) {
+        this.props.verifyOtp(code);
+        // this.props.navigation.navigate('SetupProfile');
+      }
     });
   };
 
@@ -94,7 +88,13 @@ const mapStateToProps = (state) => ({
   theme: state.auth.theme,
 });
 
-export default connect(mapStateToProps)(verificationScreen);
+const mapDispatchToProps = dispatch => {
+  return {
+    verifyOtp: (code) => dispatch(actionTypes.verifyOTP(code))
+  }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(verificationScreen);
 
 const styles = StyleSheet.create({
   container: {

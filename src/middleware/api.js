@@ -18,7 +18,6 @@ const apiMiddleware = ({ dispatch }) => next => action => {
     label,
     headers
   } = action.payload;
-  console.log('action', action);
   const dataOrParams = ["GET", "DELETE"].includes(method) ? "params" : "data";
 
   // axios default configs

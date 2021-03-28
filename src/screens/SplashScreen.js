@@ -22,7 +22,6 @@ class SplashScreen extends Component {
 
     try {
       userToken = await AsyncStorage.getItem('userToken');
-      console.log('userToken', userToken);
       if (userToken !== null) {
         getStore.dispatch({type: actionTypes.LOGIN, payload: userToken});
       } else {

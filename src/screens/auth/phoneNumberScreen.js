@@ -22,19 +22,17 @@ class phoneNumberScreen extends Component {
     this.state = {
       countryCode: RNLocalize.getCountry(),
       getCountry: null,
-      phone_number: '',
     };
   }
 
-  continueHanlder = () => {
-    // const {navigation} = this.props;
-    this.props.login();
-    // navigation.navigate('VerificationCode');
+  continueHandler = () => {
+    const { navigation, phoneNumber } = this.props;
+    this.props.login(phoneNumber)
+    navigation.navigate('VerificationCode');
   }
-  
 
   render() {
-    const {theme, navigation, loading} = this.props;
+    const {theme, navigation, loading, phoneNumber, validatePhomeNumber} = this.props;
     if (loading) {
       return <SplashScreen />;
     }
@@ -85,12 +83,12 @@ class phoneNumberScreen extends Component {
             <View style={styles.textInput}>
               <TextInput
                 style={{height: 45, color: theme.primaryColor}}
-                value={this.state.phone_number}
+                value={phoneNumber}
                 placeholder="Phone Number"
                 placeholderTextColor={theme.primaryColor}
                 keyboardType={'phone-pad'}
                 maxLength={15}
-                onChangeText={(phone_number) => this.setState({phone_number})}
+                onChangeText={(phoneNumber) => this.props.updateNumber(phoneNumber)}
               />
             </View>
           </View>
@@ -102,8 +100,8 @@ class phoneNumberScreen extends Component {
           </Text>
           <TouchableWithoutFeedback
             // onPress={() => navigation.navigate('VerificationCode')}>
-            onPress={this.continueHanlder}>
-            <View style={styles.continueView}>
+            onPress={validatePhomeNumber ? this.continueHandler : null}>
+            <View style={[styles.continueView, { backgroundColor: validatePhomeNumber ? ONLINE : LIGHTGRAY }]}>
               <Text style={styles.continueText}>Continue</Text>
             </View>
           </TouchableWithoutFeedback>
@@ -116,11 +114,15 @@ class phoneNumberScreen extends Component {
 const mapStateToProps = (state) => ({
   theme: state.auth.theme,
   loading: state.auth.loading,
+  data: state.auth.data,
+  phoneNumber: state.auth.phoneNumber,
+  validatePhomeNumber: state.auth.validatePhomeNumber
 });
 
 const mapDispatchToProps = dispatch => {
   return {
-    login: () => dispatch(actionTypes.auth())
+    updateNumber: (phoneNumber) => dispatch(actionTypes.updateNumber(phoneNumber)),
+    login: (phoneNumber) => dispatch(actionTypes.auth(phoneNumber))
   }
 }
 
@@ -171,7 +173,6 @@ const styles = StyleSheet.create({
     borderRadius: 23,
     height: 46,
     width: W_WIDTH - 40,
-    backgroundColor: ONLINE,
   },
   continueText: {
     fontSize: 14,

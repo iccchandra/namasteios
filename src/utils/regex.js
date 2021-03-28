@@ -168,11 +168,11 @@ export const regex = {
     getStore.dispatch({type: LOGOUT});
   },
 
-  showLoader: () => {
-    getStore.dispatch({
-      type: SHOW_LOADER,
-    });
-  },
+  // showLoader: () => {
+  //   getStore.dispatch({
+  //     type: SHOW_LOADER,
+  //   });
+  // },
 
   hideLoader: () => {
     getStore.dispatch({

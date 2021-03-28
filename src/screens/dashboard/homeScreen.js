@@ -11,10 +11,11 @@ import {getContacts} from '../../utils/contact';
 import Feather from 'react-native-vector-icons/Feather';
 import {Black, GRAY, LIGHTGRAY, ONLINE, White} from '../../themes/constantColors';
 import {getStore} from '../../../App';
-import {CONTACT} from '../../actions/actionTypes';
 import {Popover} from 'react-native-modal-popover';
 import { Button } from 'native-base';
 import {OS, W_WIDTH} from '../../utils/regex';
+import { uploadContacts } from '../../actions';
+import { GET_ALL_CONTACT } from '../../actions/actionTypes';
 
 class homeScreen extends Component {
     constructor(props) {
@@ -28,13 +29,11 @@ class homeScreen extends Component {
 
     componentDidMount() {
         getContacts().then(contacts => {
-            getStore.dispatch({
-                type: CONTACT,
-                payload: contacts
-            })
+            this.props.uploadContacts(contacts);
         }).catch(error => {
-
+            console.log('contacts', error);
         })
+        // this.props.uploadContacts();
     }
 
     setButton = (e, refButton) => {
@@ -146,7 +145,6 @@ class homeScreen extends Component {
 
     render() {
         const {theme, navigation} = this.props;
-        console.log('theme', theme);
         const {currentIndex, showPopover, popoverAnchor} = this.state;
 
         let name = 'message-square';
@@ -214,7 +212,13 @@ const mapStateToProps = (state) => ({
     theme: state.auth.theme,
 });
 
-export default connect(mapStateToProps)(homeScreen);
+const mapDispatchToProps = dispatch => {
+    return {
+        uploadContacts: (contacts) => dispatch(uploadContacts(contacts))
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(homeScreen);
 
 const styles = StyleSheet.create({
     container: {

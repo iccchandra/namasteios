@@ -15,6 +15,9 @@ export const SHOW_LOADER = 'SHOW_LOADER';
 
 // App::Contact
 export const CONTACT = 'CONTACT';
+export const GET_ALL_CONTACT = "GET_ALL_CONTACT";
+export const SYNC_CONTACT = "SYNC_CONTACT";
+export const CONTACT_UPLOAD = 'CONTACT_UPLOAD';
 
 // API
 export const API = "API";
@@ -24,6 +27,9 @@ export const ACCESS_DENIED = "ACCESS_DENIED";
 export const API_ERROR = "API_ERROR";
 
 // Login
-export const LOGIN_CALL_MADE = "LOGIN_CALL_MADE";
+export const LOGIN_REQUESTED = "LOGIN_REQUESTED";
 export const AUTH_SUCCESS = "AUTH_SUCCESS";
+export const VERIFY_OTP = "VERIFY_OTP";
+export const VERIFY_OTP_REQUEST = "VERIFY_OTP_REQUEST";
 
+export const ENTER_NUMBER = "ENTER_NUMBER";

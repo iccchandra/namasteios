@@ -56,7 +56,7 @@ export function getContacts() {
       permission = requestContactAccess()
     }
     return permission.then(() => {
-      regex.showLoader();
+      // regex.showLoader();
       Contacts.getAll((err, contacts) => {
         if (err) throw reject(false);
 
